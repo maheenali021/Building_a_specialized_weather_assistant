@@ -54,13 +54,13 @@ def get_weather_info(location :str) -> str:
            location_name=data["name"],)
             #creat the weather report into string formate
             weather_report = f"""
-                Weather in { weather_info.location_name}: 
-                Temperature: 🌡️ {weather_info.temperature}C
-                feels like:💦 {weather_info.feels_like})
-                Conditions:☁️ {weather_info.description}
-                Humidity: 🌫️{weather_info.humidity}%
-                Wind speed: 🌬️ {weather_info.wind_speed}m/s
-                Pressure:🌡️ {weather_info.pressure} hpa
+                🌍 Weather in { weather_info.location_name}: 
+                🌡️ Temperature:  {weather_info.temperature}C
+               😮‍💨 feels like: {weather_info.feels_like})
+               ☁️ Conditions: {weather_info.description}
+               💧 Humidity: {weather_info.humidity}%
+               🌬️ Wind speed: {weather_info.wind_speed}m/s
+               ⏲️ Pressure: {weather_info.pressure} hpa
                 """
             return weather_report
         
